@@ -5,7 +5,7 @@ class Recursion {
     private final Scanner scan = new Scanner(System.in);
 
     public int sum(int count){
-        System.out.print("Enter number: ");
+        System.out.print("Enter" + " number " + (count + 1) + ": ");
         int userSum = scan.nextInt();
         
         // if counter equals up to 4 indexes return userSum  
@@ -17,7 +17,7 @@ class Recursion {
         count++; 
 		// It takes the current value and makes a call to itself with the new count 
 		// (thus asking the user for a new number and so forth). 
-        return userSum + sum(count);
+        return userSum * sum(count);
     }
 
     public static void main(String[] args)
@@ -29,7 +29,7 @@ class Recursion {
     	// so that the value does not affect the count 
     	int total = recursionObject.sum(0);
 
-        System.out.println("The total sum is: "+ total);
+        System.out.println("The total Product is: "+ total);
        
         System.out.println("Scanner Closed.");
     }
