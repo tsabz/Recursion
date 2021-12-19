@@ -14,8 +14,7 @@ class Recursion {
             return userSum;
         }
         // else keep counting 
-        count++;
-		// return userSum + sum(count); is what makes the function recursive. 
+        count++; 
 		// It takes the current value and makes a call to itself with the new count 
 		// (thus asking the user for a new number and so forth). 
         return userSum + sum(count);
